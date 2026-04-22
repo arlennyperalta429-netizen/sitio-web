@@ -1,82 +1,122 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafetería Aroma</title>
+    <title>Cafetería Arlenys</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-amber-50 text-gray-800 font-sans">
+<body class="bg-amber-50 text-gray-800 font-sans scroll-smooth">
 
-    <!-- Encabezado -->
-    <header class="bg-amber-900 text-white p-5 text-center">
-        <h1 class="text-3xl font-bold">☕ Cafetería Aroma</h1>
-        <p class="text-sm">El mejor café para empezar tu día</p>
-    </header>
-
-    <!-- Navegación -->
-    <nav class="bg-amber-700 text-white flex justify-center gap-6 p-3">
-        <a href="#" class="hover:underline">Inicio</a>
-        <a href="#" class="hover:underline">Menú</a>
-        <a href="#" class="hover:underline">Nosotros</a>
-        <a href="#" class="hover:underline">Contacto</a>
+    <!-- NAVBAR -->
+    <nav class="bg-amber-900 text-white flex justify-between items-center px-8 py-4 sticky top-0 shadow-lg">
+        <h1 class="text-xl font-bold">☕ Arlenys</h1>
+        <div class="flex gap-6">
+            <a href="#inicio" class="hover:text-amber-300 transition">Inicio</a>
+            <a href="#menu" class="hover:text-amber-300 transition">Menú</a>
+            <a href="#nosotros" class="hover:text-amber-300 transition">Nosotros</a>
+            <a href="#contacto" class="hover:text-amber-300 transition">Contacto</a>
+        </div>
     </nav>
 
-    <!-- Sección principal -->
-    <section class="text-center p-10">
-        <h2 class="text-2xl font-semibold mb-4">Bienvenido a tu lugar favorito</h2>
-        <p class="mb-6">Disfruta de nuestros cafés, postres y un ambiente acogedor.</p>
-        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" 
-             alt="Café"
-             class="mx-auto rounded-xl shadow-lg w-80">
+    <!-- HERO (INICIO) -->
+    <section id="inicio" class="h-screen bg-cover bg-center flex flex-col justify-center items-center text-white text-center"
+        style="background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085');">
+        
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">Cafetería Arlenys</h2>
+        <p class="mb-6 text-lg">Disfruta del mejor café y postres artesanales</p>
+
+        <a href="#menu" class="bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-full transition shadow-lg">
+            Ver Menú
+        </a>
     </section>
 
-    <!-- Menú -->
-    <section class="bg-white p-10">
-        <h2 class="text-2xl font-semibold text-center mb-6">Nuestro Menú</h2>
-        
-        <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-amber-100 p-5 rounded-xl shadow">
+    <!-- MENÚ -->
+    <section id="menu" class="p-10">
+        <h2 class="text-3xl font-bold text-center mb-10">Nuestro Menú</h2>
+
+        <!-- CAFÉS -->
+        <h3 class="text-xl font-bold mb-4">☕ Cafés</h3>
+        <div class="grid md:grid-cols-3 gap-6 mb-10">
+            <div class="bg-white p-5 rounded-2xl shadow hover:scale-105 transition">
                 <h3 class="font-bold">Café Expreso</h3>
-                <p>Intenso y aromático</p>
+                <p>Intenso y aromático.</p>
                 <span class="font-semibold">$100.00</span>
             </div>
 
-            <div class="bg-amber-100 p-5 rounded-xl shadow">
+            <div class="bg-white p-5 rounded-2xl shadow hover:scale-105 transition">
                 <h3 class="font-bold">Capuchino</h3>
-                <p>Con leche espumosa</p>
+                <p>Con leche espumosa.</p>
                 <span class="font-semibold">$150.50</span>
             </div>
 
-            <div class="bg-amber-100 p-5 rounded-xl shadow">
-                <h3 class="font-bold">Pastel de Chocolate</h3>
-                <p>Delicioso y suave</p>
+            <div class="bg-white p-5 rounded-2xl shadow hover:scale-105 transition">
+                <h3 class="font-bold">Caffè Latte</h3>
+                <p>Café suave con leche cremosa.</p>
+                <span class="font-semibold">$350.50</span>
+            </div>
+        </div>
+
+        <!-- BEBIDAS -->
+        <h3 class="text-xl font-bold mb-4">🍫 Bebidas</h3>
+        <div class="grid md:grid-cols-3 gap-6 mb-10">
+            <div class="bg-white p-5 rounded-2xl shadow hover:scale-105 transition">
+                <h3 class="font-bold">Chocolate Caliente</h3>
+                <p>Cremoso y delicioso.</p>
                 <span class="font-semibold">$200.00</span>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl shadow hover:scale-105 transition">
+                <h3 class="font-bold">Batida de Fresa</h3>
+                <p>Cremosa y dulce.</p>
+                <span class="font-semibold">$150.50</span>
+            </div>
+        </div>
+
+        <!-- POSTRES -->
+        <h3 class="text-xl font-bold mb-4">🍰 Postres</h3>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-5 rounded-2xl shadow hover:scale-105 transition">
+                <h3 class="font-bold">Pastel de Chocolate</h3>
+                <p>Delicioso y suave.</p>
+                <span class="font-semibold">$200.00</span>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl shadow hover:scale-105 transition">
+                <h3 class="font-bold">Donas</h3>
+                <p>Esponjosas con glaseado.</p>
+                <span class="font-semibold">$250.00</span>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl shadow hover:scale-105 transition">
+                <h3 class="font-bold">Cheesecake</h3>
+                <p>Cremoso con fresa.</p>
+                <span class="font-semibold">$250.00</span>
             </div>
         </div>
     </section>
 
-    <!-- Nosotros -->
-    <section class="p-10 text-center">
-        <h2 class="text-2xl font-semibold mb-4">Sobre Nosotros</h2>
-        <p>
-            En Cafetería Aroma nos dedicamos a ofrecer productos de alta calidad,
-            con ingredientes frescos y un ambiente agradable para nuestros clientes.
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="bg-amber-100 p-10 text-center">
+        <h2 class="text-3xl font-bold mb-4">Sobre Nosotros</h2>
+        <p class="max-w-2xl mx-auto">
+            En Cafetería Arlenys ofrecemos productos de alta calidad,
+            con ingredientes frescos y un ambiente acogedor para todos.
         </p>
     </section>
 
-    <!-- Contacto -->
-    <section class="bg-amber-200 p-10 text-center">
-        <h2 class="text-2xl font-semibold mb-4">Contáctanos</h2>
+    <!-- CONTACTO -->
+    <section id="contacto" class="p-10 text-center">
+        <h2 class="text-3xl font-bold mb-4">Contáctanos</h2>
         <p>📍 Santo Domingo, República Dominicana</p>
         <p>📞 809-123-4567</p>
-        <p>📧 cafe@aroma.com</p>
+        <p>📧 CafeteriaArlenys@gmail.com</p>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="bg-amber-900 text-white text-center p-4">
-        <p>© 2026 Cafetería Aroma - Todos los derechos reservados</p>
+        <p>© 2026 Cafetería Arlenys</p>
     </footer>
 
 </body>
